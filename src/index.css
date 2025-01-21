@@ -1,0 +1,77 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+/* tailwind config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom components */
+@layer components {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-textGradient-start to-textGradient-end text-5xl;
+  }
+
+  .input-field {
+    @apply rounded-xl p-2 bg-neutral-0 bg-opacity-10 border-neutral-5 border-2 border-opacity-70 text-base md:text-sm text-neutral-3;
+  }
+
+  .input-field:hover {
+    @apply bg-opacity-20 cursor-pointer overflow-hidden;
+  }
+
+  .input-field:focus {
+    @apply bg-neutral-0 bg-opacity-10 outline outline-2 outline-neutral-7 outline-offset-1;
+  }
+
+  .custom-shadow-inner {
+    --tw-shadow: inset 0 10px 4px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: inset 0 -5px 5px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .error {
+    @apply text-xs text-orange-5 fill-orange-5;
+  }
+
+  .error::before {
+    content: "";
+    background: url("/icon/icon-info.svg") no-repeat center;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+
+  #upload-info::before {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='hsl(252, 6%, 83%)' stroke-linecap='round' stroke-linejoin='round' d='M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z'%3E%3C/path%3E%3Cpath fill='hsl(252, 6%, 83%)' d='M8.004 10.462V7.596ZM8 5.57v-.042Z'%3E%3C/path%3E%3Cpath stroke='hsl(252, 6%, 83%)' stroke-linecap='round' stroke-linejoin='round' d='M8.004 10.462V7.596M8 5.569v-.042'%3E%3C/path%3E%3C/svg%3E")
+      no-repeat center;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+
+  #github-username::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("/icon/icon-github.svg") no-repeat center;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: top;
+    margin-right: 6px;
+  }
+}
+
+label {
+  @apply pointer-events-none text-base;
+}
+
+body {
+  @apply min-h-screen w-full bg-mobile sm:bg-tablet md:bg-desktop bg-center bg-cover relative;
+}
