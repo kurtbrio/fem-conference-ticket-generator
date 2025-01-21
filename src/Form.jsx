@@ -90,7 +90,7 @@ const Form = () => {
     <>
       <div className="font-primary text-neutral-3 pt-8  px-5 pb-10">
         <div className="flex justify-center">
-          <img className="w-44" src="/logo/logo-full.svg" alt="Coding Conf" />
+          <img className="w-44" src="logo/logo-full.svg" alt="Coding Conf" />
         </div>
         <div className="flex items-center flex-col gap-10">
           <div className="flex flex-col items-center justify-center text-center mt-10 gap-5">
@@ -153,7 +153,7 @@ const Form = () => {
                             className={`bg-neutral-7 bg-opacity-55 border-neutral-5 border-opacity-70 border rounded-lg w-[35px] h-[35px] mb-5 ${
                               file ? "w-[45px] h-[45px] mb-3" : "p-1"
                             }`}
-                            src={file ? file : "/icon/icon-upload.svg"}
+                            src={file ? file : "icon/icon-upload.svg"}
                           />
                           {file ? (
                             <div className="flex gap-3 text-xs">
@@ -256,7 +256,7 @@ const Form = () => {
                 <div className="relative w-[500px]">
                   <img
                     className="w-full"
-                    src="/pattern-ticket.svg"
+                    src="pattern-ticket.svg"
                     alt="Ticket"
                   />
 
@@ -267,7 +267,7 @@ const Form = () => {
                   <div className="absolute top-5 left-5">
                     <img
                       className="w-44 md:w-60"
-                      src="/logo/logo-full.svg"
+                      src="logo/logo-full.svg"
                       alt=""
                     />
                     <p className="ml-10 md:ml-14 text-sm md:text-base text-neutral-3 text-opacity-80">
@@ -276,7 +276,7 @@ const Form = () => {
                   </div>
 
                   <div className="absolute bottom-5 left-5 flex items-end">
-                    <div className="bg-red-500 w-[45px] md:w-[60px] h-[45px] md:h-[60px] rounded-lg">
+                    <div className="w-[45px] md:w-[60px] h-[45px] md:h-[60px] rounded-lg">
                       <img
                         className="w-full h-full object-cover rounded-lg"
                         src={file}
@@ -303,15 +303,15 @@ const Form = () => {
       <div>
         <img
           className="absolute top-[-50px] md:top-[-70px] left-[-30px] md:left-10 w-36 md:w-44 z-0"
-          src="/pattern-circle.svg"
+          src="pattern-circle.svg"
         />
         <img
           className="absolute bottom-[225px] right-[-80px] lg:right-80 w-36 md:w-44 z-0"
-          src="/pattern-circle.svg"
+          src="pattern-circle.svg"
         />
         <img
           className="absolute top-[-30px] h-screen w-full object-cover z-0"
-          src="/pattern-lines.svg"
+          src="pattern-lines.svg"
         />
         <img
           className="absolute top-4 right-0 w-24 md:w-72 lg:w-96 z-0"
